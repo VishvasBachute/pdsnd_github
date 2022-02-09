@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 import time
 
+   """Dictonary to match cities with csv files
+   
+    """
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -247,7 +250,7 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        start_loc= 0
+        start_location= 0
         
         time_stats(df)
         station_stats(df)
@@ -256,7 +259,7 @@ def main():
         
         data = input("Do you want to see first 5 rows of data[y/n]")
         if data == 'y':
-            dispaly_data(df,start_loc)
+            dispaly_data(df,start_location)
         else:
             break
         
