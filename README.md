@@ -8,9 +8,12 @@ Bike Share
 
 ### Description
 Import US bike share data and answer interesting questions about it by computing descriptive statistics. 
+Take input from user to analyse for perticular city and date.
 
 ### Files used
 bikeshare.py
+ - conatines python code
+
 chicago.csv
 newyork.csv
 washigton.csv
